@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="visual-title visual-desc" font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<title id="visual-title">X-ray reading queue map and verification checkpoints</title>
+<desc id="visual-desc">The rendered map connects a topic list to a sorted queue and a two-item preview. The demo starts with both steps planned. The queue is verified first, then the preview.</desc>
+<rect x="1" y="1" width="958" height="438" rx="20" fill="#f4f8f6" stroke="#d1e0d9"/>
+<text x="34" y="45" font-size="30" font-weight="720" fill="#142f2b" >Reading queue demo</text>
+<text x="34" y="72" font-size="19" font-weight="500" fill="#405c55" >The queue and preview nodes open step schematics in the HTML map.</text>
+<rect x="34" y="96" width="892" height="109" rx="13" fill="#fff" stroke="#d1e0d9"/>
+<svg x="47" y="107" width="866" height="86" viewBox="0.00 0.00 662.00 65.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 50.4)">
+<title>schematic</title>
+<!-- topics -->
+<g id="node1" class="node">
+<title>topics</title>
+<path fill="#edf6f4" stroke="#b3cac6" d="M62.79,-36C62.79,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 62.79,0 62.79,0 68.79,0 74.79,-6 74.79,-12 74.79,-12 74.79,-24 74.79,-24 74.79,-30 68.79,-36 62.79,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="37.39" y="-12.4" font-family="Helvetica,sans-Serif" font-size="13.00" fill="#162c32">Topic list</text>
+</g>
+<!-- queue -->
+<g id="node2" class="node">
+<title>queue</title>
+<g id="a_node2">
+<path fill="#edf6f4" stroke="#00717a" stroke-width="2" d="M343.08,-36C343.08,-36 263.04,-36 263.04,-36 257.04,-36 251.04,-30 251.04,-24 251.04,-24 251.04,-12 251.04,-12 251.04,-6 257.04,0 263.04,0 263.04,0 343.08,0 343.08,0 349.08,0 355.08,-6 355.08,-12 355.08,-12 355.08,-24 355.08,-24 355.08,-30 349.08,-36 343.08,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="303.06" y="-12.4" font-family="Helvetica,sans-Serif" font-size="13.00" fill="#162c32">Sorted queue</text>
+
+</g>
+</g>
+<!-- topics&#45;&gt;queue -->
+<g id="edge1" class="edge">
+<title>topics&#45;&gt;queue</title>
+<path fill="none" stroke="#527477" d="M75.06,-18C117.42,-18 187.84,-18 239.04,-18"/>
+<polygon fill="#527477" stroke="#527477" points="238.79,-21.5 248.79,-18 238.79,-14.5 238.79,-21.5"/>
+<text xml:space="preserve" text-anchor="middle" x="162.92" y="-19.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#34494e">sorts and removes duplicates</text>
+</g>
+<!-- preview -->
+<g id="node3" class="node">
+<title>preview</title>
+<g id="a_node3">
+<path fill="#edf6f4" stroke="#00717a" stroke-width="2" d="M621.12,-36C621.12,-36 518.58,-36 518.58,-36 512.58,-36 506.58,-30 506.58,-24 506.58,-24 506.58,-12 506.58,-12 506.58,-6 512.58,0 518.58,0 518.58,0 621.12,0 621.12,0 627.12,0 633.12,-6 633.12,-12 633.12,-12 633.12,-24 633.12,-24 633.12,-30 627.12,-36 621.12,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="569.85" y="-12.4" font-family="Helvetica,sans-Serif" font-size="13.00" fill="#162c32">Two&#45;item preview</text>
+
+</g>
+</g>
+<!-- queue&#45;&gt;preview -->
+<g id="edge2" class="edge">
+<title>queue&#45;&gt;preview</title>
+<path fill="none" stroke="#527477" d="M356.06,-18C395.55,-18 450.39,-18 494.51,-18"/>
+<polygon fill="#527477" stroke="#527477" points="494.26,-21.5 504.25,-18 494.25,-14.5 494.26,-21.5"/>
+<text xml:space="preserve" text-anchor="middle" x="430.83" y="-19.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#34494e">supplies first two topics</text>
+</g>
+</g>
+</svg>
+<text x="34" y="242" font-size="19" font-weight="700" fill="#23473c" >Verification checkpoints</text>
+<rect x="34" y="259" width="280" height="140" rx="13" fill="#ffffff" stroke="#cbded4"/>
+<text x="52" y="290" font-size="20" font-weight="700" fill="#142f2b" >Before building</text>
+<text x="52" y="325" font-size="17" font-weight="600" fill="#33524b" >U1  Queue</text>
+<rect x="211" y="306" width="85" height="27" rx="13" fill="#edf2ef" stroke="none"/>
+<text x="253.5" y="325" font-size="15" font-weight="700" fill="#415952" text-anchor="middle">Planned</text>
+<text x="52" y="361" font-size="17" font-weight="600" fill="#33524b" >U2  Preview</text>
+<rect x="211" y="342" width="85" height="27" rx="13" fill="#edf2ef" stroke="none"/>
+<text x="253.5" y="361" font-size="15" font-weight="700" fill="#415952" text-anchor="middle">Planned</text>
+<path d="M317 328H329" fill="none" stroke="#6a877b" stroke-width="1.5"/><polyline points="329,324 335,328 329,332" fill="none" stroke="#6a877b" stroke-width="1.5"/>
+<rect x="340" y="259" width="280" height="140" rx="13" fill="#ffffff" stroke="#cbded4"/>
+<text x="358" y="290" font-size="20" font-weight="700" fill="#142f2b" >Queue check passes</text>
+<text x="358" y="325" font-size="17" font-weight="600" fill="#33524b" >U1  Queue</text>
+<rect x="517" y="306" width="85" height="27" rx="13" fill="#d9f2e1" stroke="none"/>
+<text x="559.5" y="325" font-size="15" font-weight="700" fill="#135438" text-anchor="middle">Verified</text>
+<text x="358" y="361" font-size="17" font-weight="600" fill="#33524b" >U2  Preview</text>
+<rect x="517" y="342" width="85" height="27" rx="13" fill="#edf2ef" stroke="none"/>
+<text x="559.5" y="361" font-size="15" font-weight="700" fill="#415952" text-anchor="middle">Planned</text>
+<path d="M623 328H635" fill="none" stroke="#6a877b" stroke-width="1.5"/><polyline points="635,324 641,328 635,332" fill="none" stroke="#6a877b" stroke-width="1.5"/>
+<rect x="646" y="259" width="280" height="140" rx="13" fill="#ffffff" stroke="#cbded4"/>
+<text x="664" y="290" font-size="20" font-weight="700" fill="#142f2b" >Preview check passes</text>
+<text x="664" y="325" font-size="17" font-weight="600" fill="#33524b" >U1  Queue</text>
+<rect x="823" y="306" width="85" height="27" rx="13" fill="#d9f2e1" stroke="none"/>
+<text x="865.5" y="325" font-size="15" font-weight="700" fill="#135438" text-anchor="middle">Verified</text>
+<text x="664" y="361" font-size="17" font-weight="600" fill="#33524b" >U2  Preview</text>
+<rect x="823" y="342" width="85" height="27" rx="13" fill="#d9f2e1" stroke="none"/>
+<text x="865.5" y="361" font-size="15" font-weight="700" fill="#135438" text-anchor="middle">Verified</text>
+</svg>

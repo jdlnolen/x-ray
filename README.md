@@ -13,3 +13,5 @@ The renderer needs Python 3.9 or later and Graphviz. Check that the **dot** comm
 Ask your agent to use X-ray to map an implementation plan and refresh each step as it is verified. The [reading queue demo](skills/x-ray/references/demo.md) runs through two steps in a scratch directory and produces a map with links to both schematics.
 
 X-ray also supports [project opt-in for ongoing updates](skills/x-ray/references/project.md) during Compound Engineering or other implementation work.
+
+[MIT license](LICENSE)

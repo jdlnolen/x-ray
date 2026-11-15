@@ -1,0 +1,4 @@
+interface:
+  display_name: "X-ray"
+  short_description: "Map the project and diagram every build step"
+  default_prompt: "Use $x-ray to map this implementation plan and update the linked schematics as each build step is verified."

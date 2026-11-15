@@ -1,0 +1,61 @@
+{
+  "title": "Reading queue",
+  "summary": "A synthetic project that produces a sorted reading queue and a two-item preview.",
+  "diagram": {
+    "nodes": [
+      {"id": "topics", "label": "Topic list"},
+      {"id": "queue", "label": "Sorted queue (planned)", "step": "reading-u1"},
+      {"id": "preview", "label": "Two-item preview (planned)", "step": "reading-u2"}
+    ],
+    "edges": [
+      {"from": "topics", "to": "queue", "label": "sorts and removes duplicates"},
+      {"from": "queue", "to": "preview", "label": "supplies first two topics"}
+    ]
+  },
+  "steps": [
+    {
+      "id": "reading-u1",
+      "unit": "U1",
+      "workstream": "Reading queue",
+      "title": "Build the queue",
+      "plan": "docs/plan.md",
+      "status": "planned",
+      "depends_on": [],
+      "summary": "Produce a sorted queue with one line per topic.",
+      "diagram": {
+        "nodes": [
+          {"id": "topics", "label": "topics.txt"},
+          {"id": "sort", "label": "Sort unique lines"},
+          {"id": "queue", "label": "queue.txt (planned)"}
+        ],
+        "edges": [
+          {"from": "topics", "to": "sort", "label": "four lines"},
+          {"from": "sort", "to": "queue", "label": "three topics"}
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "id": "reading-u2",
+      "unit": "U2",
+      "workstream": "Reading queue",
+      "title": "Make a preview",
+      "plan": "docs/plan.md",
+      "status": "planned",
+      "depends_on": ["reading-u1"],
+      "summary": "Read the queue and write the first two topics to a preview file.",
+      "diagram": {
+        "nodes": [
+          {"id": "queue", "label": "queue.txt"},
+          {"id": "head", "label": "Take two lines"},
+          {"id": "preview", "label": "preview.txt (planned)"}
+        ],
+        "edges": [
+          {"from": "queue", "to": "head", "label": "sorted topics"},
+          {"from": "head", "to": "preview", "label": "first two topics"}
+        ]
+      },
+      "evidence": []
+    }
+  ]
+}

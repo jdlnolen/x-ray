@@ -7,6 +7,8 @@ description: Maintain one navigable project architecture map with a linked schem
 
 Keep one map of the project and one linked schematic per meaningful build step. Make the diagrams answer what each part does, what flows between parts, and where the current work fits.
 
+Open the generated HTML to explore diagrams with zoom, fit, component focus, expanded view, and project/step navigation. Auto layout adapts the graph direction to the available space; readers can also choose Horizontal or Vertical. See [viewer controls](references/project.md#viewing-large-diagrams). After a renderer update, re-render existing saved state to add the current controls.
+
 To try the skill with synthetic inputs, follow the [reading queue demo](references/demo.md). The renderer requires Python 3.9+ and Graphviz `dot` on `PATH`. Compound Engineering is optional. See the [MIT license](references/LICENSE.txt).
 
 1. Read [the project setup and state format](references/project.md) on first use. Reuse the project's `.x-ray/state.json` across workstreams and worktrees. Inspect implementation evidence in the checkout where the host verified it. The renderer uses Python 3 and Graphviz `dot` to produce self-contained local HTML under `.x-ray/`.

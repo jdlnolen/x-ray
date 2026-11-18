@@ -8,6 +8,8 @@ The final map from the reading queue demo links the sorted queue and two-item pr
 
 ![X-ray's reading queue map and the two build steps as they move from Planned to Verified](docs/images/reading-queue.svg)
 
+The HTML viewer fits large diagrams to the screen and provides zoom, drag/pinch panning, component focus, and an expanded view. Auto layout adapts the graph direction for desktop and phone screens, with manual horizontal/vertical controls. Project navigation and a step selector stay above the map. Re-render existing saved state with the updated renderer to add these controls.
+
 Open a step in the live HTML map to see its inputs, output, source plan, and verification evidence. The preview step also links back to the queue step it depends on. [Run the reading queue demo](skills/x-ray/references/demo.md)
 
 ## Install

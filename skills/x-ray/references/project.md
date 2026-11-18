@@ -67,3 +67,17 @@ python3 scripts/render.py --check /absolute/path/to/.x-ray/state.json
 ```
 
 This runs validation and Graphviz in memory. It reports the page count on success and exits nonzero with a diagnostic on failure. Both outcomes leave generated HTML untouched. Run the command without `--check` when you are ready to update the map and schematics.
+
+## Viewing large diagrams
+
+Open `index.html` or a step page to use the interactive viewer. Each page includes both horizontal and vertical Graphviz layouts, with all controls and assets embedded for offline use. The saved state format is unchanged.
+
+- **Fit** shows the whole diagram; **+**, **−**, and **100%** change its scale. Drag with a mouse to pan, or use Ctrl/⌘ + scroll to zoom around the pointer.
+- **Focus** centers and highlights a component. Linked components still open their step schematics. Tabbing to a linked component brings it into view.
+- **Expand** opens a larger dialog. Escape or **Close expanded view** returns to the page. On touch screens, vertical swipes scroll the inline page; the expanded view permits panning in both directions. Two-finger pinching zooms the diagram.
+- **Layout → Auto** uses the available viewport width and shape to choose a direction. **Horizontal** and **Vertical** override it. Resizing or rotating a device recomputes Auto layout and keeps a focused component selected. This changes the graph flow, without rotating its text.
+- The top navigation links to the project map, diagram, and build-step list. **Go to** opens any step, and step pages also have previous/next links in the saved step order. These links complement the documented dependency links.
+
+With the diagram or one of its node links focused, arrow keys pan, +/− zoom, and 0 clears component focus and restores Fit. Enter opens a focused node link. Printing uses the whole diagram and restores the on-screen camera afterward.
+
+To upgrade an existing map, run the updated renderer on its current `state.json`. Rendering replaces the generated pages while preserving the state, recorded evidence, and step IDs. Static SVG images or screenshots do not include the HTML viewer controls.
